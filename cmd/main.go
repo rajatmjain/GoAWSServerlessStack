@@ -29,8 +29,8 @@ func main(){
 		return
 	}
 
-	dynaClient := dynamodb.New(awsSession)
-	res, err := lambda.Start(handler())
+	dynaClient = dynamodb.New(awsSession)
+	lambda.Start(handler)
 }
 
 const tableName = "LambdaInGoUser"
