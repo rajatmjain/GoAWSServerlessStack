@@ -5,7 +5,7 @@ import (
 )
 
 
-func isEmailValid(email string)bool{
+func IsEmailValid(email string)bool{
 	_, err := mail.ParseAddress(email)
 	return err==nil
 
